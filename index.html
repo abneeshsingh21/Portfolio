@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/e2ec8bd865.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <!-- -------navigation bar------- -->
+    <div id="header">
+        <div class="container">
+            <nav id="sidemenu">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <div id="btn" class="toggle-btn">
+                    <span id="btnText">Dark</span>
+                    <img id="btnIcon" src="images/moon.png" alt="icon" />
+                </div>
+
+                <!-- for small devices -->
+                <i class="fas fa-bars " onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>Programmer </p> -->
+                <h1>Hi, I'm <span>Abneesh</span> <br />A Computer Science Student</h1>
+            </div>
+        </div>
+    </div>
+    <!-------about------>
+
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="image" />
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hey there,I am Abneesh Singh, currently pursuing a Bachelor of Technology in Computer Science
+                    and Engineering at Jagran Lakecity University, Bhopal. My journey in technology has fueled a deep
+                    interest in computers, and I am particularly passionate about cybersecurity.<br>
+                </p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">
+                        Skills
+                    </p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Web development</span><br>HTML, CSS, JavaScrpt, TailwindCSS, React, NextJs, XML. </li>
+                        <li><span>Programming languages</span><br> C, C++, Python, Java, Javascript, </li>
+                        <li><span>Cyber Security</span><br>Kali Linux, CMD, Networking, Burp Suite,Nmap, Wireshark.
+                        </li>
+                        <li><span>Other Skills</span><br>SQL, DSA, ADA, DBMS, Prompting.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Web development</span><br>Fresher</li>
+                        <li><span>Programming languages</span><br>Some Guided Project</li>
+                        <li><span>Cyber Security</span><br>Fresher</li>
+                        <li><span>Other Experience</span><br>NA</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Matriculation</span><br>Shri Sai Academy</li>
+                        <li><span>Intermediate</span><br>Shri Sai Academy,Mhow</li>
+                        <li><span>Higher Education</span><br>Persuing B.Tech.(CSE)hons. at Jagran lakecity University,Bhopal
+                            - (2023-2027)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------services----------->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I offer modern web development solutions, specializing in HTML, CSS, JavaScript, TailwindCSS,
+                        React, Next.js, and XML. Whether it's creating a portfolio website, business website, or
+                        interactive web application, I focus on responsive, user-friendly, and optimized designs. My
+                        goal is to build websites that provide a seamless experience and strong functionality.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-square-binary"></i>
+                    <h2>Cyber Security</h2>
+                    <p>With expertise in penetration testing, vulnerability assessment, and security analysis, I aim to
+                        help businesses and individuals secure their digital assets. I work with tools like Kali Linux,
+                        Burp Suite, Nmap, and Wireshark to analyze and strengthen security. Whether it’s network
+                        security, ethical hacking, or security awareness training, I strive to enhance cybersecurity
+                        defenses.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Programming</h2>
+                    <p>I provide programming assistance and software solutions using C, C++, Python, Java, and
+                        JavaScript. My skills in Data Structures & Algorithms (DSA), Algorithm Design and Analysis
+                        (ADA), SQL, and DBMS allow me to develop efficient, scalable, and optimized solutions. From
+                        custom scripts to software applications, I am passionate about problem-solving and innovation.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------Portfolio-------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work 1" />
+                    <div class="layer">
+                        <h3>Web Programming</h3>
+                        <p>I build responsive and high-performance websites using HTML, CSS, JavaScript, TailwindCSS,
+                            React, Next.js, and XML, ensuring seamless user experiences.</p>
+                        <a href="https://mithunkumarrajak.github.io/calculator/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work 2" />
+                    <div class="layer">
+                        <h3>Programming</h3>
+                        <p>Proficient in C, C++, Python, Java, and JavaScript, I develop efficient and secure software
+                            solutions, leveraging DSA, SQL, and DBMS for problem-solving and automation.
+                            I am committed to delivering innovative and secure solutions in web development,
+                            cybersecurity, and software engineering.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work 3" />
+                    <div class="layer">
+                        <h3>Cyber Security</h3>
+                        <p>With expertise in penetration testing, vulnerability assessment, and network security, I work
+                            on analyzing and mitigating cyber threats to ensure system security. Certified in CEH v12,
+                            Google Cybersecurity Professional Certificate, and Google AI Essentials, I utilize tools
+                            like Kali Linux, Burp Suite, Nmap, and Wireshark to strengthen digital defenses and conduct
+                            security assessments.</p>
+                        <a href="https://www.linkedin.com/in/abneesh-singh-492083283/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+    <!----------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contacr me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+918109523341</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/abneesh-singh-492083283/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="abneesh@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/abneesh-singh-492083283/"><i class="fa fa-github"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" Download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <!-- ----submit-to-google-sheet------- -->
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name " required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+
+                <p>copyright <i class="fa-regular fa-copyright"></i> Mithun.Made with <i
+                        class="fa-solid fa-heart  heard"></i>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button id="scrollUp"><i class="fa-duotone fa-solid fa-arrow-up"></i>
+    </button>
+
+
+</body>
+
+</html>
